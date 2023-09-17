@@ -92,7 +92,7 @@ Once you are able to connect to the ADAM2 FTP server, perform the following step
 
 Run FTP in a Command Prompt:
 
-'''ftp -n 192.168.178.1'''
+```ftp -n 192.168.178.1```
 
 Enter these commands:
 
