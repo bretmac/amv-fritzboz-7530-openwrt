@@ -106,7 +106,7 @@ quit
 Don't restart the router, simply run the recovery tool and it should reflash the device this time.
 
 
-## Factort Reset Analysis
+## Factory Reset Analysis
 
 The conversation between the recovery tool and the device for a failed recovery is as follows:
 
