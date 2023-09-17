@@ -90,6 +90,44 @@ Aborting the recovery.
 
 ## Factort Reset Analysis
 
+The conversation between the recovery tool and the device for a failed recovery is as follows:
+
+```
+220 ADAM2 FTP Server ready
+USER adam2
+331 Password required for adam2
+PASS adam2
+230 User adam2 successfully logged in
+SYST
+215 AVM EVA Version 1.11581 0x0 0x46409
+TYPE I
+200 Type set to BINARY
+MEDIA SDRAM
+200 Media set to MEDIA_SDRAM
+P@SW
+227 Entering Passive Mode (169,254,115,1,252,99)
+RETR env
+150 Opening BINARY data connection
+226 Transfer complete
+USER adam2
+331 Password required for adam2
+PASS adam2
+230 User adam2 successfully logged in
+SYST
+215 AVM EVA Version 1.11581 0x0 0x46409
+TYPE I
+200 Type set to BINARY
+MEDIA SDRAM
+200 Media set to MEDIA_SDRAM
+P@SW
+227 Entering Passive Mode (169,254,115,1,162,203)
+RETR count
+150 Opening BINARY data connection
+226 Transfer complete
+BYE
+221 Thank you for using the FTP service on ADAM2
+221 Goodbye.
+```
 
 ```RETR env``` returns the following data:
 
