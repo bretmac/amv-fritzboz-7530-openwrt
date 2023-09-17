@@ -88,6 +88,24 @@ Please contact your Internet Service Provider instead.
 Aborting the recovery.
 ```
 
+Once you are able to connect to the ADAM2 FTP server, perform the following steps:
+
+Run FTP in a Command Prompt:
+
+'''ftp -n 192.168.178.1'''
+
+Enter these commands:
+
+```
+quote USER adam2
+quote PASS adam2
+quote UNSETENV provider
+quit
+```
+
+Don't restart the router, simply run the recovery tool and it should reflash the device this time.
+
+
 ## Factort Reset Analysis
 
 The conversation between the recovery tool and the device for a failed recovery is as follows:
