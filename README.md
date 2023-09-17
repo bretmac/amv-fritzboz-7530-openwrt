@@ -55,5 +55,19 @@ In short:  this just does not work for me at all.
 The tool did one of two things for me:
 
 - Fritz!Box not found at all despite multiple retries
-- Recovery complete message immediately despite doing nothing
+  
+  or
+  
+- Recovery complete message appears immediately despite doing nothing
+
+It's possible that the tool was getting confused when presented with detecting a 0.0.0.0 IP address, or it was searching on the wrong interface.
+
+I don't have a PC at hand that is not multi-homed or is not running Hyper-V.  A solution that worked for me was to run up a Windows 11 virtual machine and attached just one network adapter.  
+
+Running this machine up meant that Windows was auto-assiging itself a 169.254.0.0/16 IP address.  When the tool starts it sends out an ARP request for a device with a 1 in the last octet, and the device responds.  The tool works 100 percent of the time when run from the virtual machine.
+
+For example:
+
+- Virtual machine address: 169.254.115.123
+- Search address: 169.254.115.1
 
