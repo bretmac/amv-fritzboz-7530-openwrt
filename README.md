@@ -71,3 +71,19 @@ For example:
 - Virtual machine address: 169.254.115.123
 - Search address: 169.254.115.1
 
+The device boots into the ADAM2 FTP Server (this is true even if the device has been flashed with OpenWrt).
+
+### Aborting the Recovery
+
+The recovery tool would not proceed and presented the following dialogue:
+
+![image](https://github.com/bretmac/amv-fritzboz-7530-openwrt/assets/44399243/b4750056-d81f-45c1-83bf-9760edbeb3f1)
+
+
+```
+Note: The device contains basic settings adapted for your
+Internet Service Provider (2018-02_01_zen).  Recovery could
+make the device inoperable on the 2018-02_01_zen network.
+Please contact your Internet Service Provider instead.
+Aborting the recovery.
+```
