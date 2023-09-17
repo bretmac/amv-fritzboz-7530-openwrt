@@ -83,7 +83,7 @@ The recovery tool would not proceed and presented the following dialogue:
 ```
 Note: The device contains basic settings adapted for your
 Internet Service Provider (2018-02_01_zen).  Recovery could
-make the device inoperable on the 2018-02_01_zen network.
+make the device inoperable on the 2018-02-01_zen network.
 Please contact your Internet Service Provider instead.
 Aborting the recovery.
 ```
